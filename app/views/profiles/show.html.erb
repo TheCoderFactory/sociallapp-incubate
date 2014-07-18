@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @profile.name %>
+</p>
+
+<p>
+  <strong>Starsign:</strong>
+  <%= @profile.starsign %>
+</p>
+
+<p>
+  <strong>Hobbies:</strong>
+  <%= @profile.hobbies %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @profile.user.email %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %>
+
+<br><hr><br>
+<h3>Tell us your thoughts:</h3>
+
+<%= render 'status_updates/form' %>
+
+
+
+
+
+
+
+
+

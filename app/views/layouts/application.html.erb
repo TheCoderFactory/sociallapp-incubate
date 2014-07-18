@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Socialapp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body>
+<%= link_to "Home", root_path, class: 'btn btn-default' %> | 
+<%= link_to "My profile", profile_path(current_user.profile), class: 'btn btn-primary' %>
+<hr>
+<%= yield %>
+
+</body>
+</html>
